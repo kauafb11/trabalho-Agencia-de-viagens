@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #111;
+    background-color: #000;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 8rem;
+  }
+  
+  #hotlinks {
+    height: 40px;
+    padding: 0.3rem;
+    /*16px*/
+    gap: 0.5rem;
+  
+    background-color: #073425;
+  
+    display: flex;
+    justify-content: flex-end;
+    /*sentido oposto a direção*/
+    align-items: center;
+  }
+  
+  #hotlinks a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+  }
+  
+  #hotlinks a:hover {
+    color: #40c79a;
+  }
+  
+  #line {
+    height: 40%;
+    width: 1px;
+    background-color: #fff;
+  }
+  
+  #social {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .socialbuttons {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+  
+    padding: 0.8rem;
+  
+    background-color: #11862f;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: all 0.5s;
+  }
+  
+  .socialbuttons:hover {
+    filter: brightness(0.8);
+  }
+  
+  #mainnavigation {
+    height: 6.125rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  #logo {
+    text-transform: uppercase;
+    color: #ffffff;
+  
+    font-family: 'Caladea', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #111;
+  }
+  
+  #links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navlinks {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.25rem;
+    transition: color 0.5s;
+  }
+  
+  .navlinks:nth-child(1) {
+    color: #56a181;
+  }
+  
+  .navlinks:hover {
+    color: #245d44;
+  }
+  
+  #home {
+    background: url(./assets/img/home-bg-opacity.png) no-repeat;
+    height: 800px;
+    padding: 5rem;
+  
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    align-items: flex-start;
+  }
+  
+  #home h1 {
+    font-family: 'Caladea', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 6rem;
+    text-shadow: 1px 1px 2px #111;
+  }
+  
+  #home h2 {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 600px;
+    text-shadow: 1px 1px 2px #111;
+  }
+  #home button {
+    width: 400px;
+    background-color: #5f6f52;
+    color: #fff;
+    padding: 1rem;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  #home button:hover {
+    filter: brightness(1.2);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    transform: translateY(-40px);
+  }
+  
+  .imagem {
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .imagem:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+  }
+  
+
+  
+  .imagem p {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 15px;
+    width: fit-content;
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+  }
+  
+  img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #beach {
+    padding: 1.25rem 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 4rem;
+  
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 1rem;
+  }
+  
+  .category {
+    text-transform: uppercase;
+  }
+  
+  #text-beach {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  #beachimg {
+    width: 200px;
+    align-self: center;
+  }
+  
+  .destaque {
+    color: #5f6f52;
+  }
+  
+  #beach button {
+    background-color: #5f6f52;
+    color: #fff;
+    padding: 1rem;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 8px;
+    gap: 2rem;
+  }
+  
+  #beach button:hover {
+    filter: brightness(1.2);
+  }
+  
+  #popular {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+    width: 100%;
+    max-width: 100vw;
+
+    gap: 50px;
+  }
+
+  #popularimg {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    height: auto;
+    padding-left: 90px;
+    
+  }
+  
+  #popular h1 {
+    font-family: 'Caladea', serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 4.5rem;
+    text-shadow: 1px 1px 2px #111;
+  }
+
+  #travel {
+    background: url(./assets/img/explore-beach-opacity.png);
+    height: 750px;
+    padding: 5rem;
+  
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    align-items: flex-start;
+
+  }
+
+  #travel h1 {
+    font-family: 'Caladea', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 3.75rem;
+    text-shadow: 1px 1px 2px #111;
+  }
+  
+  #travel p {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+    font-size: 1rem;
+    width: 800px;
+    text-shadow: 1px 1px 2px #111;
+  }
+  
+  .banner-content {
+    position: relative;
+    top: 88%;
+    z-index: 1;
+
+    gap: 20px;
+
+}
+
+#banner-final {
+  padding: 1rem ;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 4rem;
+    
+  }
+
+#banner-final img {
+  width: 60%;
+  height: auto;
+}
+
+#banner-contentf {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+#banner-contentf h2 {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 600px;
+  text-shadow: 1px 1px 2px #111;
+}
+
+#banner-contentf form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+#banner-contentf input[type="email"] {
+  padding: 10px;
+  border: outline;
+  margin-bottom: 20px;
+  background-color: transparent;
+  gap:10px;
+}
+
+#emailInput:focus{
+  border: 2px solid #fff;
+}
+
+
+#banner-contentf button {
+  padding: 10px 20px;
+  background-color: #5f6f52;
+  color: #ffffff;
+  cursor: pointer;
+}
+  
+  footer {
+    background-color: #5f6f52;
+    padding: 100px 0;
+  }
+  .container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+  }
+  .row-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .footer-col ul {
+    list-style: none;
+  }
+  .footer-col ul li {
+    margin: 10px 0;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 600px) {
+    .footer-col {
+      width: 100%;
+    }
+  }
+  
